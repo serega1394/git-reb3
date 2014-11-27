@@ -44,7 +44,7 @@ if ($language == null) {
                 if (is_object($string)) {
                     $string = $string->string();
                 }
-                $tokenvalues[] = $string;
+                $tokenvalues[] = string; //commit 6
             }
         }
         $result = (object)array('tokens' => $tokenvalues, "errors" => $errormessages);
