@@ -442,7 +442,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
 
 
     public function supported_hints() {
-        return array('whatis', 'wheretxt', 'wherepic');
+        return !empty($this->errors); //commit 5
     }
     // Form and DB related functions.
     public function float_form_fields() {
@@ -451,7 +451,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
     }
 
     public function extra_question_fields() {
-        return array('absentmistakeweight');
+         return !empty($this->errors); //commit 5
     }
 
 }
