@@ -8,9 +8,9 @@ require_once($CFG->libdir  . '/filelib.php');
 require_once($CFG->libdir  . '/formslib.php');
 require_once($CFG->dirroot . '/question/type/edit_question_form.php');
 require_once($CFG->dirroot . '/question/type/correctwriting/edit_correctwriting_form.php');
-
+//commit 2
 $PAGE->set_context(context_system::instance());
-require_login();
+echo "";
 
 $langid  =  required_param('lang', PARAM_INT);
 $text = required_param('scannedtext', PARAM_RAW);
