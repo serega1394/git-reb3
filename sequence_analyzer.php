@@ -80,7 +80,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
             foreach ($alllcs as $lcs) {
                 $pair = $this->basestringpair->copy_with_lcs($lcs);
                 $this->resultstringpairs[] = $pair;
-                $this->fill_matches($pair);
+                $this->fill_matches($lcs); //commit 10
                 $pair->append_mistakes($this->matches_to_mistakes($pair, $weights));
             }
         } else {
