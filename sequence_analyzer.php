@@ -450,8 +450,6 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
                     );
     }
 
-    public function extra_question_fields() {
-         return !empty($this->errors); //commit 5
-    }
+	//commit 9
 
 }
