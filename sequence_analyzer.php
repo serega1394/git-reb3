@@ -59,7 +59,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
      * @param qtype_correctwriting_question $question
      * @param qtype_correctwriting_string_pair $basepair a pair, passed as input
      * @param block_formal_langs_abstract_language $language a language
-     * @param bool $bypass false if analyzer should work, true if it should just allow subsequent analyzers to work.
+     //commit 4
      */
     public function __construct($question = null, $basepair = null, $language = null, $bypass = true) {
         parent::__construct($question, $basepair, $language, $bypass);
@@ -248,9 +248,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
                     $kjtask->iktask = null;
                     $kjtask->kjtask = null;
                     $kjtask->result = array();
-                    $task->kjtask = $kjtask;
-                    $evalqueue[] = $kjtask;
-
+                    //commit 4
                     if (count($deferqueue) == 0) {
                         $deferqueue[] = $task;
                     } else {
