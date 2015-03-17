@@ -437,7 +437,7 @@ class  qtype_correctwriting_sequence_analyzer extends qtype_correctwriting_abstr
 
 
     public function has_errors() {
-        return !empty($this->errors);
+        return null;	//commit 15
     }
 
 
